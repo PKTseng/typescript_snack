@@ -42,7 +42,7 @@ class Food {
     }
 }
 
-// 測試食物座標
+// 測試食物座標是否隨機產生
 // const food = new Food();
 
 // food.change();
