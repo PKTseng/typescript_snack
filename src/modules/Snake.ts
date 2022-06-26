@@ -114,10 +114,10 @@ class Snake {
   checkHeadBody() {
     // 獲取所有的身體，檢查是否和蛇頭的座標發生重疊
     for (let i = 1; i < this.bodies.length; i++) {
-      let bd = this.bodies[i] as HTMLElement;
+      let snackBody = this.bodies[i] as HTMLElement;
 
       // 判斷蛇頭撞到了自己，遊戲結束
-      if (this.X === bd.offsetLeft && this.Y === bd.offsetTop) throw new Error("蛇撞到自己了");
+      if (this.X === snackBody.offsetLeft && this.Y === snackBody.offsetTop) throw new Error("蛇撞到自己了");
     }
   }
 }
