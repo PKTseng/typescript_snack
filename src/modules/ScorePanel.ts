@@ -42,14 +42,14 @@ class ScorePanel {
 }
 
 
-const scorePanel = new ScorePanel(100, 2);
+const scorePanel = new ScorePanel();
 
 // 確認分數數字
 // scorePanel.addScore();
 
 
-for (let i = 0; i < 200; i++) {
-    scorePanel.addScore();
-}
+// for (let i = 0; i < 200; i++) {
+//     scorePanel.addScore();
+// }
 
 export default ScorePanel;
