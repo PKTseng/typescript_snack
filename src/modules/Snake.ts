@@ -65,7 +65,7 @@ class Snake {
 
     // 修改Ｙ時，是在修改垂直座標，當蛇向下移動時不能掉頭，同理反方向也是
     if (this.bodies[1] && (this.bodies[1] as HTMLElement).offsetTop === value) {
-      // console.log('水平方向掉頭了');
+      // console.log('垂直方向掉頭了');
 
       // 發生掉頭後，讓蛇方向繼續移動
       if (value > this.Y) {
@@ -95,7 +95,7 @@ class Snake {
     // 第３個 ＝第２個位置
     // 第２個 ＝第１個位置
 
-    //取得所有身體位置， 大於０是因為０是舌頭的位置，所以不能等於０
+    //取得所有身體位置， 因為０是舌頭的位置，所以不能等於０
     for (let i = this.bodies.length - 1; i > 0; i--) {
       // 取得前面身體的位置，並且用類型斷言
       let X = (this.bodies[i - 1] as HTMLElement).offsetLeft;
